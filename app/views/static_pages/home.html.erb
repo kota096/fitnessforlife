@@ -18,22 +18,19 @@
   </div>
 <% else %>
   <div class="center ">
-    <h1>ようこそ</h1>
-    <p>ダイエットや筋トレなどの情報をシェアしよう！</p>
-    <h2>
-      登録者数
-      <%= @user_count %>
-      人
-    </h2>
-    <h2>
-      This is the home page for the
-      <a href="https://railstutorial.jp/">Ruby on Rails Tutorial</a>
-      sample application.
-    </h2>
+    <% if @user_count%100 == 0 && @user_count != 0%>
+      <h1>
+        登録者数
+        <%= @user_count %>
+        人突破！
+      </h1>
+    <% end %>
+    <h1>ようこそ！</h1>
+    <div class=welcome>このサイトに登録してダイエットや筋トレなどの情報をシェアしよう！</div>
 
-    <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+
+    <%= link_to "新規登録はこちら", signup_path, class: "btn btn-lg btn-primary" %>
   </div>
 
-  <%= link_to image_tag("rails.png", alt: "Rails logo"),
-              'http://rubyonrails.org/' %>
+  <% link_to image_tag("rails.png", alt: "Rails logo"),'http://rubyonrails.org/' %>
 <% end %>
