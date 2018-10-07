@@ -39,7 +39,9 @@ textarea {
   }
 }
 //リスト5.20で変更（できるだけまとめる）
-
+.field{
+  color:black;
+}
 
 /* typography */
 
@@ -47,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
 
-.text{
+.jumbotron{
   background: rgba(0,0,0,0.5);
 }
 
@@ -73,7 +75,9 @@ p {
   font-size: 1.3em;
   line-height: 1.7em;
 }
-
+.shop{
+  text-align: center;
+}
 .welcome{
   font-size: 1.6em;
   line-height: 1.7em;
@@ -183,14 +187,14 @@ aside {
     float: left;
     padding: 0 10px;
     border-left: 1px solid $gray-lighter;
-    color: gray;
+    color: white;
     &:first-child {
       padding-left: 0;
       border: 0;
     }
     &:hover {
       text-decoration: none;
-      color: blue;
+      color: gray;
     }
   }
   strong {
@@ -277,6 +281,7 @@ input {
 /* microposts */
 
 .microposts {
+  
   list-style: none;
   padding: 0;
   li {
@@ -296,7 +301,7 @@ input {
     }
   }
   .timestamp {
-    color: $gray-light;
+    color: white;
     display: block;
     margin-left: 60px;
   }
@@ -320,3 +325,4 @@ span.picture {
     border: 0;
   }
 }
+
