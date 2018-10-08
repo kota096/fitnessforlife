@@ -1,16 +1,18 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
+<header class="navbar navbar-fixed-top navbar-inverse" style=background-color:#000022>
   <div class="container">
     <%= link_to "FITNESS FOR LIFE", root_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "ホーム", root_path %></li>
-        <li><%= link_to "ヘルプ", help_path %></li>
+        <li><%= link_to "ホーム", root_path,id:"menu" %></li>
+        <li><%= link_to "ヘルプ", help_path,id:"menu" %></li>
         <% if logged_in? %>
-        　<li><%= link_to "おすすめ通販", supplement_path %></li>
-          <li><%= link_to "ユーザー", users_path %></li>
+        　<li><%= link_to "おすすめ通販", supplement_path,id:"menu" %></li>
+          <li><%= link_to "ユーザー", users_path,id:"menu" %></li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              アカウント <b class="caret"></b>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >
+              <div class="dmenu">
+                アカウント <b class="caret"></b>
+              </div>
             </a>
             <ul class="dropdown-menu">
               <li><%= link_to "プロフィール", current_user %></li>
@@ -22,7 +24,7 @@
             </ul>
           </li>
         <% else %>
-          <li><%= link_to "ログイン", login_path %></li>
+          <li><%= link_to "ログイン", login_path,id:"menu" %></li>
         <% end %>
       </ul>
     </nav>
