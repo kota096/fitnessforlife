@@ -1,5 +1,5 @@
-Hi <%= @user.name %>,
+こんにちは <%= @user.name %>,
 
-Welcome to the Sample App! Click on the link below to activate your account:
+ようこそLIFE FOR FITNESSへ！次のリンクからアカウントの有効化を行ってください。
 
 <%= edit_account_activation_url(@user.activation_token, email: @user.email) %>
