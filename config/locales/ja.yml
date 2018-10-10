@@ -228,7 +228,7 @@ ja:
       present: は入力しないでください
 
       confirmation: と%{attribute}の入力が一致しません
-
+      
       empty: を入力してください
 
       equal_to: は%{count}にしてください
@@ -412,7 +412,8 @@ ja:
       short: "%m/%d %H:%M"
 
     pm: 午後
-  attributes:
+  attributes: 
+    content: 投稿内容
   user:
     name: 名前
     age: 年齢
