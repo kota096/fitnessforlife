@@ -8,17 +8,17 @@
       <%= f.label "メールアドレス" %>
       <%= f.email_field :email, class: 'form-control' %>
 
-      <%= f.label :password %>
+      <%= f.label "パスワード" %>
       <%= f.password_field :password, class: 'form-control' %>
 
       <%= f.label :remember_me, class: "checkbox inline" do %>
         <%= f.check_box :remember_me %>
-        <span>Remember me on this computer</span>
+        <span>このコンピューターに記憶させますか？</span>
       <% end %>
 
       <%= f.submit "ログイン", class: "btn btn-primary" %>
     <% end %>
 
-    <p>New user? <%= link_to "新規登録はこちら!", signup_path %></p>
+    <p><%= link_to "新規登録はこちら!", signup_path %></p>
   </div>
 </div>

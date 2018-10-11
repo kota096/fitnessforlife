@@ -414,8 +414,14 @@ ja:
     pm: 午後
   attributes: 
     content: 投稿内容
+    email: メールアドレス
+    name: 名前
+    password: パスワード
+    password_confirmation: 確認用パスワード
   user:
     name: 名前
     age: 年齢
+    
+    
 
   site_title: サイトのタイトル
