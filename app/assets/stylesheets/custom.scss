@@ -78,12 +78,19 @@ h3{
   font-size: 2em;
 }
 
-p {
-  font-size: 1.5em;
-  line-height: 1.7em;
-}
 .shop{
   text-align: center;
+  p {
+    font-size: 2em;
+    line-height: 1.7em;
+  }
+  .left{
+    text-align:left;
+    p{
+      font-size: 1.5em;
+      line-height: 0.5em;
+    }
+  }
 }
 .welcome{
   font-size: 1.6em;
@@ -366,3 +373,4 @@ a{
 .inquiry{
   text-align:center;
 }
+

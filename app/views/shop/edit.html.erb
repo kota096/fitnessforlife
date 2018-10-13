@@ -1,13 +1,15 @@
-<% provide(:title, "おすすめ通販") %>
+<% provide(:title, "おすすめ通販サイト") %>
 <div class="shop">
     <h1>iHerb</h1>
     <p>こちらサイトではamazonなどでは売ってないサプリメントやプロテインなど様々な商品が売っています。</p>
     <p>筋トレ用以外にも健康に関する商品や健康的なお菓子などもあります。</p>
     <p>品揃えでは私の知っている中ではNo.1です。</p>
-    <p>なのでダイエットや筋トレだけでなく健康やスキンケアをしたい人など幅広い人におすすめです。</p>
+    <p>なのでダイエットや筋トレをしている方だけでなく健康を意識している人にもおすすめです。</p>
     <p>iHerbはこちらから</p>
     <p>↓　　↓　　↓</p>
     <%= link_to image_tag("iherb.jpg", alt: "shop_logo"),'https://jp.iherb.com' %>
+</div>
+<div class="shop">
     <h1>MYPROTEIN</h1>
     <p>こちらのサイトの特徴はとにかく安く、購入金額によってギフトがもらえることです。</p>
     <p>商品はトレーニングをする人向けのプロテインやサプリメントが多く売っています。</p>
@@ -17,4 +19,14 @@
     <p>MYPROTEINはこちらから</p>
     <p>↓　　↓　　↓</p>
     <%= link_to image_tag("myprotein.jpg", alt: "shop_logo"),'https://www.myprotein.jp/referrals.list?applyCode=KOTARO-R1K' %>
+</div>
+<div class="shop">
+    <div class="left">
+        <h1>その他おすすめサイト</h1>
+        <p><%= link_to "ビーレジェンド",'https://belegend.jp/' %>国内のプロテインで安くて高品質といえばここ！</p>
+        <p><%= link_to "amazon",'https://www.amazon.co.jp/' %>はなんといっても世界一のショッピングサイトでサプリメントからフィットネス用品まで！</p>
+        <p><%= link_to "マッスルプロジェクト",'http://muscleproject.jp/#secondPage' %>まだ新しくできたサイトで商品数は少ないですがこれからどんどん増えていくと思います!</p>
+        <p><%= link_to "金剛筋シャツ",'http://menz-store.com/mt/5url/' %>強力な着圧で体を引き締めてくれるここでしか買えない加圧シャツが売ってます！</p>
+        p><%= link_to "ビーレジェンド",'https://belegend.jp/' %>国内のプロテインで安くて高品質といえばここ！</p>
+    </div>
 </div>

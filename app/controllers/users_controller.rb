@@ -8,8 +8,11 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @microposts = @user.microposts.paginate(page: params[:page])
+    @serch={text: nil}
   end
-
+  def find
+  end
+  
   def index
     @users = User.where(activated: true).paginate(page: params[:page])
   end
