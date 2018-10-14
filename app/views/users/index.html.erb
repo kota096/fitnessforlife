@@ -1,10 +1,6 @@
 <% provide(:title, 'すべてのユーザー') %>
 <h1>すべてのユーザー</h1>
-
 <%= will_paginate %>
-<div class="field>"
-  <textarea></textarea>
-</div>
 <ul class="users">
   <% @users.each do |user| %>
     <%= render @users %>
