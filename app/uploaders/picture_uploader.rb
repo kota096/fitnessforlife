@@ -3,11 +3,11 @@ class PictureUploader < CarrierWave::Uploader::Base
   process resize_to_limit: [400, 400]
 
   
-  if Rails.env.production?
-    storage :fog
-  else
+ # if Rails.env.production?
+   # storage :fog
+ # else
     storage :file
-  end
+ # end
   # アップロードファイルの保存先ディレクトリは上書き可能
   # 下記はデフォルトの保存先  
   def store_dir
