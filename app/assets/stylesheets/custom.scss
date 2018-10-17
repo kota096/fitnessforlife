@@ -374,3 +374,27 @@ a{
   text-align:center;
 }
 
+.search_form{
+  color:black;
+  width:20%;
+}
+
+.me{
+  max-width: 500px;
+  height: auto;
+}
+
+.botan{
+  width:50px;
+  height:25px;
+  background-color:#00CCCC;
+  border-radius: 5px;
+  &:hover{
+    background-color:#00FFCC;
+  }
+}
+
+.mini_logo{
+  width:1px;
+  height:auto;
+}

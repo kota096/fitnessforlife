@@ -12,7 +12,7 @@ class UsersController < ApplicationController
 
   
   def index
-    @users = User.where(activated: true).paginate(page: params[:page])
+    @users = User.where(activated: true).paginate(page: params[:page]).search(params[:search])
   end
 
   def new
@@ -68,8 +68,7 @@ class UsersController < ApplicationController
   private
 
     def user_params
-      params.require(:user).permit(:name, :email, :password,
-                                   :password_confirmation)
+      params.require(:user).permit(:name, :email, :password, :password_confirmation)
     end
       # ログイン済みユーザーかどうか確認
     def logged_in_user
