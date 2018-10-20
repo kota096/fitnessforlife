@@ -15,7 +15,8 @@
     <p>商品はトレーニングをする人向けのプロテインやサプリメントが多く売っています。</p>
     <p>そのほかにはダイエット時のおやつやフィットネス用の服も売っています。</p>
     <p>特にダイエットやボディメイクをしている人におすすめです。</p>
-    <p>新規の方にはプロテインシェイカーと色々な味のプロテインのサンプルがもらえるので初心者の方にもおすすめです。</p>
+    <p>新規の方にはプロテインシェイカーと色々な味のプロテインのサンプルがもらえるので</p>
+    <p>筋トレを始めようと思っている方や初めてプロテインを買う方にもおすすめです。</p>
     <p>MYPROTEINはこちらから</p>
     <p>↓　　↓　　↓</p>
     <%= link_to image_tag("myprotein.jpg", alt: "shop_logo"),'https://www.myprotein.jp/referrals.list?applyCode=KOTARO-R1K' %>
@@ -23,16 +24,34 @@
 <div class="shop">
     <div class="left">
         <h1>その他おすすめサイト</h1>
-        <%= link_to "ビーレジェンド",'https://belegend.jp/' %>
-        <%= link_to image_tag("be_legend.jpg", alt: "shop_logo"),'https://belegend.jp/' ,class: 'mini_logo' %>
-        <p>国内のプロテインで安くて高品質といえばここ！</p>
-        <%= link_to "amazon",'https://www.amazon.co.jp/' %>
+        <div class="mini_title">
+            <%= link_to "ビーレジェンド",'https://belegend.jp/' %>
+        </div>
+        <p>国産のプロテインで安くて高品質といえばここ！</p>
+        <div class="mini_logo">
+            <%= link_to image_tag("be_legend.jpg", alt: "shop_logo"),'https://belegend.jp/' %>
+        </div>
+        <br>
+        <div class="mini_title">
+            <%= link_to "amazon",'https://www.amazon.co.jp/' %>
+        </div>
         <p>なんといっても世界一のショッピングサイトでサプリメントからフィットネス用品まで！</p>
-        <%= link_to "マッスルプロジェクト",'http://muscleproject.jp/#secondPage' %>
+        <div class="mini_logo">
+            <%= link_to image_tag("amazon.jpg", alt: "shop_logo"),'https://belegend.jp/' %>
+        </div>
+        <div class="mini_title">
+            <%= link_to "マッスルプロジェクト",'http://muscleproject.jp/' %>
+        </div>
         <p>まだ新しくできたサイトで商品数は少ないですがこれからどんどん増えていくと思います!</p>
-        <%= link_to "金剛筋シャツ",'http://menz-store.com/mt/5url/' %>
+        <div class="mini_logo">
+            <%= link_to image_tag("be_legend.jpg", alt: "shop_logo"),'http://muscleproject.jp/' %>
+        </div>
+        <div class="mini_title">
+            <%= link_to "金剛筋シャツ",'http://menz-store.com/mt/5url/' %>
+        </div>
         <p>強力な着圧で体を引き締めてくれるここでしか買えない加圧シャツが売ってます！</p>
-        <%= link_to "ビーレジェンド",'https://belegend.jp/' %>
-        <p>国内のプロテインで安くて高品質といえばここ！</p>
+        <div class="mini_logo">
+            <%= link_to image_tag("be_legend.jpg", alt: "shop_logo"),'http://menz-store.com/mt/5url/' %>
+        </div>
     </div>
 </div>

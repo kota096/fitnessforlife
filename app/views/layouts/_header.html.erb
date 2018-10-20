@@ -4,7 +4,7 @@
     <nav>
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "ホーム", root_path,id:"menu" %></li>
-        <li><%= link_to "ヘルプ", help_path,id:"menu" %></li>
+        <li><%= link_to "お問い合わせ", help_path,id:"menu" %></li>
         <% if logged_in? %>
         　<li><%= link_to "おすすめ通販サイト", shop_path,id:"menu" %></li>
           <li><%= link_to "ユーザー", users_path,id:"menu" %></li>

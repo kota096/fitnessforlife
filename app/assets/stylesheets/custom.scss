@@ -358,9 +358,13 @@ span.picture {
 }
 
 .btn{
-  background-color:#00CCCC;
+  background-color:white;
+  border:solid 1px white;
+  color:black;
   &:hover{
-    background-color:#00FFCC;
+    background-color:black;
+    border:solid 1px white;
+    color:white;
   }
 }
 
@@ -396,6 +400,12 @@ a{
 }
 
 .mini_logo{
-  width:1px;
-  height:1px;
+  img{
+    width:25em;
+    height:20em;
+  }
+}
+
+.mini_title{
+  font-size:2em;
 }
