@@ -3,7 +3,7 @@
 <%= will_paginate %>
 <div class=search_form >
   <%= form_tag(users_path, method: :get) do %>
-    <%= text_field_tag :search =>nil %>
+    <%= text_field_tag :search, :search, placeholder: "入力してください"%>
     <%= submit_tag '検索', :name => nil ,class: 'botan'%>
   <% end %>
 </div>

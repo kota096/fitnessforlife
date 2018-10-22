@@ -21,7 +21,6 @@ body {
   background-attachment: fixed;
   background-size: cover;
   color: white;
-  
 }
 
 section {
@@ -84,14 +83,9 @@ h3{
     font-size: 2em;
     line-height: 1.7em;
   }
-  .left{
-    text-align:left;
-    p{
-      font-size: 1.5em;
-      line-height: 0.5em;
-    }
-  }
 }
+
+
 .welcome{
   font-size: 1.6em;
   line-height: 1.7em;
@@ -233,6 +227,7 @@ aside {
   }
 }
 
+
 .user_avatars {
   overflow: auto;
   margin-top: 10px;
@@ -358,13 +353,11 @@ span.picture {
 }
 
 .btn{
-  background-color:white;
+  background-color:#000033;
   border:solid 1px white;
-  color:black;
   &:hover{
-    background-color:black;
+    background-color:	#000000;
     border:solid 1px white;
-    color:white;
   }
 }
 
@@ -374,6 +367,7 @@ a{
     color:#00FFCC;
   }
 }
+
 
 .inquiry{
   text-align:center;
@@ -392,10 +386,13 @@ a{
 .botan{
   width:50px;
   height:25px;
-  background-color:#00CCCC;
+  background-color:#000033;
+  border:solid 1px white;
   border-radius: 5px;
+  color:white;
   &:hover{
-    background-color:#00FFCC;
+    background-color:	#000000;
+    border:solid 1px white;
   }
 }
 
@@ -409,3 +406,4 @@ a{
 .mini_title{
   font-size:2em;
 }
+
