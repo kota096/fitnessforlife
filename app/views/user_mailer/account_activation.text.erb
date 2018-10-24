@@ -1,5 +1,5 @@
 こんにちは <%= @user.name %>さん
 
-ようこそLIFE FOR FITNESSへ！次のリンクからアカウントの有効化を行ってください。
+ようこそFITNESS FOR LIFEへ！次のリンクからアカウントの有効化を行ってください。
 
 <%= edit_account_activation_url(@user.activation_token, email: @user.email) %>
