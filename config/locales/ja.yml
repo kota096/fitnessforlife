@@ -8,7 +8,7 @@ ja:
     errors:
 
       messages:
-
+    
         record_invalid: "バリデーションに失敗しました: %{errors}"
 
         restrict_dependent_destroy:
@@ -16,6 +16,8 @@ ja:
           has_one: "%{record}が存在しているので削除できません"
 
           has_many: "%{record}が存在しているので削除できません"
+          
+          
 
   date:
 
@@ -220,6 +222,7 @@ ja:
     format: "%{attribute}%{message}"
 
     messages:
+      extension_whitelist_error: のサイズは5MB以内にしてください
 
       accepted: を受諾してください
 
@@ -414,6 +417,7 @@ ja:
     pm: 午後
   attributes: 
     content: 投稿内容
+    picture: 画像
     email: メールアドレス
     name: 名前
     password: パスワード
