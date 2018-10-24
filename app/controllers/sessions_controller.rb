@@ -11,13 +11,13 @@ class SessionsController < ApplicationController
         params[:session][:remember_me] == '1' ? remember(user) : forget(user)
         redirect_back_or user
       else
-        message  = "アカウントが見つかりませんでした"
-        message += "メールから有効化リンクを確認してください"
+        message  = "アカウントが見つかりませんでした。"
+        message += "メールから有効化リンクを確認してください。"
         flash[:warning] = message
         redirect_to root_url
       end
     else
-      flash.now[:danger] = '無効なメール/パスワードの組み合わせです'
+      flash.now[:danger] = '無効なメール/パスワードの組み合わせです。'
       render 'new'
     end
   end
