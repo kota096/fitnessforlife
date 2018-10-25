@@ -1,5 +1,7 @@
 <% provide(:title, "おすすめ通販サイト") %>
 <div class="shop">
+    <h1>管理人のよく使うサイト</h1>
+    <br>
     <h1><%= link_to "iHerb",'https://jp.iherb.com' ,:target=>["_blank"] ,:style=>"color:#FFFF00;"%></h1>
     <p>こちらサイトではサプリメントやプロテインなど</p>
     <p>様々な商品が売っています。</p>
@@ -12,6 +14,8 @@
     <p>↓　　↓　　↓</p>
     <%= link_to image_tag("iherb.jpg", alt: "shop_logo"),'https://jp.iherb.com' ,:target=>["_blank"] %>
 </div>
+<br>
+<br>
 <div class="shop">
     <h1><%= link_to "MYPROTEIN",'https://www.myprotein.jp/referrals.list?applyCode=KOTARO-R1K' ,:target=>["_blank"] ,:style=>"color:#FFFF00;" %></h1>
     <p>こちらのサイトの特徴はとにかく安いことと、</p>
@@ -25,6 +29,8 @@
     <p>↓　　↓　　↓</p>
     <%= link_to image_tag("myprotein.jpg", alt: "shop_logo"),'https://www.myprotein.jp/referrals.list?applyCode=KOTARO-R1K' ,:target=>["_blank"] %>
 </div>
+<br>
+<br>
 <div class="shop">
         <h1>その他おすすめサイト</h1>
         <div class="mini_title">
@@ -34,7 +40,6 @@
         <div class="mini_logo">
             <%= link_to image_tag("be_legend.jpg", alt: "shop_logo"),'https://belegend.jp/' ,:target=>["_blank"] %>
         </div>
-        <br>
         <div class="mini_title">
             <%= link_to "Amazon",'https://www.amazon.co.jp/' ,:target=>["_blank"],:style=>"color:#FFFF00;" %>
         </div>

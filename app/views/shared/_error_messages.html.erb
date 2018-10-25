@@ -3,10 +3,12 @@
     <div class="alert alert-danger">
       <%= pluralize(object.errors.count, "箇所入力エラー") %>
     </div>
-    <ul>
-    <% object.errors.full_messages.each do |msg| %>
-      <li><%= msg %>。</li>
-    <% end %>
-    </ul>
+    <div class="error_msg">
+      <ul>
+      <% object.errors.full_messages.each do |msg| %>
+        <li><%= msg %>。</li>
+      <% end %>
+      </ul>
+    </div>
   </div>
 <% end %>
