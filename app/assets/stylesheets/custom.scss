@@ -97,6 +97,8 @@ h3{
 
 /* header */
 
+
+
 #menu{
   color:white;
   &:hover{
@@ -111,9 +113,12 @@ h3{
   } 
 }
 
+
 .dropdown-menu{
   background-color:#003333;
 }
+
+
 #logo {
   float: left;
   margin-right: 10px;
@@ -414,4 +419,10 @@ a{
     background-color:pink;
     border-radius:5px;
   }
+}
+
+.navbar-inverse .navbar-nav > .open > a, 
+.navbar-inverse .navbar-nav > .open > a:hover, 
+.navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: #003333;
 }
